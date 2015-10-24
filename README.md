@@ -21,7 +21,7 @@ Go to the Service.cs file, find 3 constants used by the service during the insta
 For install and uninstall after you compile the application use the following commands
  
 #### Install
-Assuming your exe file is named Service.exe
+Assuming your exe file name is Service.exe
 ```
  	Service.exe /i
 ```
