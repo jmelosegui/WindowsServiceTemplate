@@ -18,7 +18,7 @@ Go to the Service.cs file, find 3 constants used by the service during the insta
  
 ### Install/Uninstall
  
-For install and uninstall after you compile the application use the followings command
+For install and uninstall after you compile the application use the following commands
  
 #### Install
 Assuming your exe file is named Service.exe
@@ -44,5 +44,5 @@ In the properties window click on Debug tab and add a "-d" to the Command line a
 
 ![debugservice](https://cloud.githubusercontent.com/assets/450246/10711776/a2e326b6-7a54-11e5-99ef-c91f2b0450d5.png)
 
-Now run the project in debug mode and you will able to debug your code
+Now run the project in debug mode and you will able to debug your code.
 
