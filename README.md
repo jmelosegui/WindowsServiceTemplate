@@ -28,7 +28,7 @@ Assuming your exe file is named Service.exe
 
 Now go to the microsoft service console (services.msc) and you will see your service installed.
 
-[Service image] (link)
+![serviceinstall](https://cloud.githubusercontent.com/assets/450246/10711782/b64790e8-7a54-11e5-9118-a9fbc1f8dbfd.png)
 
 #### Uninstall
 ```
@@ -42,7 +42,7 @@ Now go to the microsoft service console (services.msc) and you will see your ser
 On Visual Studio, open the solution explorer, right click on the project, then click properties.
 In the properties window click on Debug tab and add a "-d" to the Command line arguments configuration.
 
-[image](link)
+![debugservice](https://cloud.githubusercontent.com/assets/450246/10711776/a2e326b6-7a54-11e5-99ef-c91f2b0450d5.png)
 
 Now run the project in debug mode and you will able to debug your code
 
