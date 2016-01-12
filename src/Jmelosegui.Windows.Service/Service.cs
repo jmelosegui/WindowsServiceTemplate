@@ -1,9 +1,9 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Configuration;
 using System.ServiceProcess;
 using System.Threading;
 using System.Timers;
+using Jmelosegui.Windows.Service.Native;
 
 namespace Jmelosegui.Windows.Service
 {
@@ -165,12 +165,12 @@ namespace Jmelosegui.Windows.Service
         {
             string servicePath = AppDomain.CurrentDomain.BaseDirectory + typeof(Service).Assembly.ManifestModule.Name;
 
-            new ServiceInstaller().Install(servicePath, serviceName, serviceDisplayName, serviceDescription);
+            AdvApi32.CreateService(servicePath, serviceName, serviceDisplayName, serviceDescription, null, null);
         }
 
         private static void Uninstall()
         {
-            new ServiceInstaller().Uninstall(serviceName);
+            AdvApi32.DeleteService(serviceName);
         }
 
         #endregion

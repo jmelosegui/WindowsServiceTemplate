@@ -40,7 +40,7 @@ Now go to the microsoft service console (services.msc) and you will see your ser
 ```
 ### Debug
 On Visual Studio, open the solution explorer, right click on the project, then click properties.
-In the properties window click on Debug tab and add a "-d" to the Command line arguments configuration.
+In the properties window click on Debug tab and add a "/d" to the Command line arguments configuration.
 
 ![debugservice](https://cloud.githubusercontent.com/assets/450246/10711776/a2e326b6-7a54-11e5-99ef-c91f2b0450d5.png)
 

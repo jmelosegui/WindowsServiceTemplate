@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,11 +49,19 @@
   <ItemGroup>
     <Compile Include="Logger\ILogger.cs" />
     <Compile Include="Logger\NullLogger.cs" />
+    <Compile Include="Native\SafeServiceHandle.cs" />
+    <Compile Include="Native\ServiceAccess.cs" />
+    <Compile Include="Native\ServiceDescription.cs" />
+    <Compile Include="Native\ServiceErrorControl.cs" />
+    <Compile Include="Native\ServiceInfoLevel.cs" />
+    <Compile Include="Native\ServiceManagerAccess.cs" />
+    <Compile Include="Native\ServiceStartType.cs" />
+    <Compile Include="Native\ServiceType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ServiceInstaller.cs" />
+    <Compile Include="Native\AdvApi32.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
